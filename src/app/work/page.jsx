@@ -10,12 +10,12 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
+import blastTradingApp from '@/images/clients/blast-trading-app/logo-dark.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
+import logoPowFinancial from '@/images/clients/pow-financial/logo-dark.svg'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -53,6 +53,9 @@ function CaseStudies({ caseStudies }) {
                       <time dateTime={caseStudy.date}>
                         {formatDate(caseStudy.date)}
                       </time>
+                      {caseStudy.endDate && <span>{" – "}<time dateTime={caseStudy.endDate}>
+                        {formatDate(caseStudy.endDate)}
+                      </time></span>}
                     </p>
                   </div>
                 </div>
@@ -92,8 +95,8 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
+  ['Pow Financial', logoPowFinancial],
+  ['Family Fund', blastTradingApp],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],

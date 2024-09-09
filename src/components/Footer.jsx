@@ -9,9 +9,9 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
+      { title: 'Blast Trading App', href: '/work/blas-trading-app' },
+      { title: 'Pow Financial', href: '/work/pow-financial' },
       { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
       {
         title: (
           <>

@@ -20,6 +20,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import { CONTACT_HREF } from "@/lib/contants"
 
 const RootLayoutContext = createContext(null)
 
@@ -71,8 +72,8 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
+          <Button href={CONTACT_HREF} invert={invert}>
+            Get Started
           </Button>
           <button
             ref={toggleRef}

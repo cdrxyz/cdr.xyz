@@ -1,0 +1,69 @@
+import logo from '@/images/clients/pow-financial/logomark-dark.svg'
+import imageHero from './hero.png'
+import imageCeo from './ceo.png'
+
+export const caseStudy = {
+  client: 'Pow Financial',
+  title: 'Canadian financial disclosures, searchable',
+  description:
+    'Unlike the numerous US platforms, Canada lacked an easy way to search through company disclosure and financial documents. Cedar Vista crawled the data and made it searchable for all investors.',
+  summary: [
+    'Unlike the numerous US platforms, Canada lacked an easy way to search through company disclosure and financial documents.',
+    'Cedar Vista crawled the data and made it searchable for all investors.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-06',  
+  endDate: '2024-08',
+  service: 'Fullstack, Backend, Frontend, DevOps',
+  testimonial: {
+    author: { name: '[redacted]', role: 'CEO of Pow Financial' },
+    content:
+      'We had an amibitious goal to liberate Canadian corporate disclosures and financial documents from the decrepid government portal. Cedar Vista made our dream come alive. They crawled all the documents, built a full document management service and frontend app for investors, and even built an embeddable table for company IR websites. And it all still works great, 2 years later.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Canada lacked a polished government regulator portal, or even a third-party dashboard to make research and monitoring of company disclosures and financial documents effortless for investors and market participants.
+
+Pow Financial approached Cedar Vista early on to be the primary technology partner to build a solution.
+
+Over 2 years that they were involved, Cedar Vista delivered:
+
+- robust website crawling to download, index, and cache all historical and ongoing documents from the government portal
+- an enterprise-grade document management service for ongoing search and categorization of documents
+- a mobile-friendly modern dashboard for investors to use to discover companies, monitor existing watchlists, and quickly view new documents
+- deployed the entire infrastructure extremely cost-effectively given the 1TB+ of initial data being managed
+- robust CI/CD and parallel crawling infrastructure to support safe, fast deployments, and ongoing crawling capabilities
+- uptime monitoring, metrics, and alerting to ensure ongoing observability and operational excellence
+
+Pow Financial was able to achieve what initially seemed technically impossible thanks to the technical expertise and execution of Cedar Vista.
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Hotwire)</TagListItem>
+  <TagListItem>Backend (Kotlin)</TagListItem>
+  <TagListItem>CI/CD (BuildKite)</TagListItem>
+  <TagListItem>DevOps</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: '[redacted]', role: 'CEO of Pow Financial' }}
+  image={{ src: imageCeo }}
+>
+  We had an amibitious goal to liberate Canadian corporate disclosures and financial documents from the decrepid government portal. Cedar Vista made our dream come alive. They crawled all the documents, built a full document management service and frontend app for investors, and even built an embeddable table for company IR websites. And it all still works great, 2 years later.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="20%" label="Churn rate" />
+  <StatListItem value="5x" label="Uninstalls" />
+  <StatListItem value="2.3" label="App store rating" />
+  <StatListItem value="8" label="Pending lawsuits" />
+</StatList>

@@ -36,6 +36,9 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                         <time dateTime={caseStudy.date.split('-')[0]}>
                           {caseStudy.date.split('-')[0]}
                         </time>
+                        {caseStudy.endDate && (caseStudy.endDate.split('-')[0] != caseStudy.date.split('-')[0]) && <span>{" – "}<time dateTime={caseStudy.endDate.split("-")[0]}>
+                        {caseStudy.endDate.split('-')[0]}
+                      </time></span>}
                       </dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">

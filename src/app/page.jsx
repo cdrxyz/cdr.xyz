@@ -9,20 +9,20 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import blastTradingApp from '@/images/clients/blast-trading-app/logo-light.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoPowFinancialDark from '@/images/clients/pow-financial/logo-dark.svg'
+import logoPowFinancialLight from '@/images/clients/pow-financial/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
+  ['Pow Financial', logoPowFinancialLight],
+  ['Blast Trading App', blastTradingApp],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],
@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We've partnered and built with many amazing teams:
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -64,13 +64,11 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Helping unblock teams with enterprise-grade software solutions"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          Teams need capable software solutions to unblock business growth. Cedar Vista delivers solutions which have enterprise-grade reliability, scalability, maintainbility, and usability so you can reach your potential.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -91,11 +89,14 @@ function CaseStudies({ caseStudies }) {
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <time
-                    dateTime={caseStudy.date.split('-')[0]}
                     className="font-semibold"
+                    dateTime={caseStudy.date.split('-')[0]}
                   >
                     {caseStudy.date.split('-')[0]}
                   </time>
+                  {caseStudy.endDate && (caseStudy.endDate.split('-')[0] != caseStudy.date.split('-')[0]) && <span>{" – "}<time className="font-semibold" dateTime={caseStudy.endDate.split("-")[0]}>
+                    {caseStudy.endDate.split('-')[0]}
+                  </time></span>}
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
@@ -180,12 +181,11 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Data Crawling. AI. Crypto. Search. Chat Bots.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            You don't have to choose between shipping fast and software which will last.<br/>
+            Cedar Vista builds delightful digital solutions with the latest proven enterprise-caliber software engineering practices so you can achieve your objectives.
           </p>
         </FadeIn>
       </Container>
@@ -196,11 +196,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Pow Financial', logo: logoPowFinancialDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Cedar Vista made our dream come alive. They built an entire automated system and dashboard, and it all still works great 2 years later, for us and our users.
       </Testimonial>
 
       <Services />

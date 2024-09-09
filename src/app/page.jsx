@@ -126,7 +126,7 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Software may not be your expertise, that's okay! But, it is ours. Bring us your problem, and we'll work with you to land on an approach that fits within your budget, timeline, and objectives.
+          {"Software may not be your expertise, that's okay! But, it is ours. Bring us your problem, and we'll work with you to land on an approach that fits within your budget, timeline, and objectives."}
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -142,16 +142,16 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Fullstack Applications">
-              Frontend, Backend, DevOps. We can build end-to-end software solutions that let you display any amount of data in a searchable modern dashboard, all deployed on reliable infrastructure that won't break the bank.
+              {"Frontend, Backend, DevOps. We can build end-to-end software solutions that let you display any amount of data in a searchable modern dashboard, all deployed on reliable infrastructure that won't break the bank."}
             </ListItem>
             <ListItem title="Web Crawling">
-              Not every data set has an open API, but we have years of experience with successfully, efficiently crawling from websites and processing it into human or computer usable data.
+              {"Not every data set has an open API, but we have years of experience with successfully, efficiently crawling from websites and processing it into human or computer usable data."}
             </ListItem>
             <ListItem title="Landing Pages">
-              First impressions matter. Let us build a website which will ensure future customers are intrigued and persuaded to signup.
+              {"First impressions matter. Let us build a website which will ensure future customers are intrigued and persuaded to signup."}
             </ListItem>
             <ListItem title="Data Pipelines & Migrations">
-              Many teams already have different SaaS subscriptions, but moving data between vendors can be costly if you do it their way. Let us build a custom pipeline or migration at a fraction of the cost of vendor consultants.
+              {"Many teams already have different SaaS subscriptions, but moving data between vendors can be costly if you do it their way. Let us build a custom pipeline or migration at a fraction of the cost of vendor consultants."}
             </ListItem>
           </List>
         </div>

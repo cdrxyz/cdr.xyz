@@ -176,8 +176,8 @@ export default async function Home() {
             Data Crawling. AI. Crypto. Search. Chat Bots.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            You don't have to choose between shipping fast and software which will last.<br/>
-            Cedar Vista builds delightful digital solutions with the latest proven enterprise-grade software engineering practices so you can achieve your objectives.
+            {"You don't have to choose between shipping fast and software which will last."}<br/>
+            {"Cedar Vista builds delightful digital solutions with the latest proven enterprise-grade software engineering practices so you can achieve your objectives."}
           </p>
         </FadeIn>
       </Container>

@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We've partnered and built with many amazing teams:
+            Cedar Vista has partnered with many amazing teams and built with many industry leading tools:
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -122,12 +122,11 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="You have problems. We work with you to build the right solution."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Software may not be your expertise, that's okay! But, it is ours. Bring us your problem, and we'll work with you to land on an approach that fits within your budget, timeline, and objectives.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -142,24 +141,17 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Fullstack Applications">
+              Frontend, Backend, DevOps. We can build end-to-end software solutions that let you display any amount of data in a searchable modern dashboard, all deployed on reliable infrastructure that won't break the bank.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Web Crawling">
+              Not every data set has an open API, but we have years of experience with successfully, efficiently crawling from websites and processing it into human or computer usable data.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Landing Pages">
+              First impressions matter. Let us build a website which will ensure future customers are intrigued and persuaded to signup.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Data Pipelines & Migrations">
+              Many teams already have different SaaS subscriptions, but moving data between vendors can be costly if you do it their way. Let us build a custom pipeline or migration at a fraction of the cost of vendor consultants.
             </ListItem>
           </List>
         </div>
@@ -170,7 +162,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'We build delightful software solutions with enterprise-grade techniques.',
 }
 
 export default async function Home() {
@@ -185,7 +177,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             You don't have to choose between shipping fast and software which will last.<br/>
-            Cedar Vista builds delightful digital solutions with the latest proven enterprise-caliber software engineering practices so you can achieve your objectives.
+            Cedar Vista builds delightful digital solutions with the latest proven enterprise-grade software engineering practices so you can achieve your objectives.
           </p>
         </FadeIn>
       </Container>

@@ -48,8 +48,8 @@ export function Logo({
         filled={filled}
       />
       <h1 className={
-          invert ? 'text-white' : 'text-neutral-950'
-        }>{"cdr"}</h1>
+        invert ? 'text-white' : 'text-neutral-950'
+      }>{"cdr"}</h1>
     </div>
 
     // SVG Logo

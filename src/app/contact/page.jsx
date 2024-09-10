@@ -47,7 +47,12 @@ function RadioInput({ label, ...props }) {
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form
+        action={"mailto:hello@cdr.xyz"}
+        method={"POST"}
+        enctype={"text/plain"}
+        name={"Contact Form"}
+      >
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -70,10 +75,10 @@ function ContactForm() {
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
+                <RadioInput label="$0K – $5K" name="budget" value="0k-5k" />
+                <RadioInput label="$5K – $10K" name="budget" value="5k-10k" />
+                <RadioInput label="$10K – $50K" name="budget" value="10k-50k" />
+                <RadioInput label="More than $50K" name="budget" value="50k+" />
               </div>
             </fieldset>
           </div>
@@ -90,37 +95,36 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        Email us
       </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
+      <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+        {[
+          ['Contact', 'hello@cdr.xyz'],
+        ].map(([label, email]) => (
+          <div key={email}>
+            <dt className="font-semibold text-neutral-950">{label}</dt>
+            <dd>
+              <Link
+                href={`mailto:${email}`}
+                className="text-neutral-600 hover:text-neutral-950"
+              >
+                {email}
+              </Link>
+            </dd>
+          </div>
+        ))}
+      </dl>
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
+          Our offices
         </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
-          ].map(([label, email]) => (
-            <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
-              <dd>
-                <Link
-                  href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
-                >
-                  {email}
-                </Link>
-              </dd>
-            </div>
-          ))}
-        </dl>
+        <p className="mt-6 text-base text-neutral-600">
+          Prefer doing things in person? We don’t but we have to list our
+          addresses here for legal reasons.
+        </p>
+
+        <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
       </Border>
 
       <Border className="mt-16 pt-16">
@@ -134,15 +138,15 @@ function ContactDetails() {
 }
 
 export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  title: 'Contact us',
+  description: 'You have problems, we can help. Reach out and we can start a conversation on how.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="Contact us" title="You have problems, we can help.">
+        <p>Reach out and we can start a conversation on how.</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">

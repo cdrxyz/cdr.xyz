@@ -20,7 +20,6 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
-import { CONTACT_HREF } from "@/lib/contants"
 
 const RootLayoutContext = createContext(null)
 
@@ -60,11 +59,12 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
+          {/* If bring a proper logo instead of h1, uncomment so large logo hidden in favor of motion s on mobile */}
+          {/* <Logomark
             className="h-8 sm:hidden"
             invert={invert}
             filled={logoHovered}
-          />
+          /> */}
           <Logo
             className="hidden h-8 sm:block"
             invert={invert}
@@ -72,8 +72,8 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href={CONTACT_HREF} invert={invert}>
-            Get Started
+          <Button href={"/contact"} invert={invert}>
+            Say Hello
           </Button>
           <button
             ref={toggleRef}
@@ -216,12 +216,25 @@ function RootLayoutInner({ children }) {
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      Email us
                     </h2>
-                    <Offices
-                      invert
-                      className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
+                    <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+                      {[
+                        ['Contact', 'hello@cdr.xyz'],
+                      ].map(([label, email]) => (
+                        <div key={email}>
+                          <dt className="text-base font-semibold text-white">{label}</dt>
+                          <dd>
+                            <Link
+                              href={`mailto:${email}`}
+                              className="text-white"
+                            >
+                              {email}
+                            </Link>
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
                   </div>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">

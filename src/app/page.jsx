@@ -14,14 +14,14 @@ import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPowFinancialDark from '@/images/clients/pow-financial/logo-dark.svg'
-import logoPowFinancialLight from '@/images/clients/pow-financial/logo-light.svg'
+import logoMapleviewDark from '@/images/clients/mapleview/logo-dark.svg'
+import logoMapleviewLight from '@/images/clients/mapleview/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Pow Financial', logoPowFinancialLight],
+  ['Mapleview', logoMapleviewLight],
   ['Blast Trading App', blastTradingApp],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
@@ -188,7 +188,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Pow Financial', logo: logoPowFinancialDark }}
+        client={{ name: 'Mapleview', logo: logoMapleviewDark }}
       >
         Cedar Vista made our dream come alive. They built an entire automated system and dashboard, and it all still works great 2 years later, for us and our users.
       </Testimonial>

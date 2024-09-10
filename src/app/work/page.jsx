@@ -15,7 +15,7 @@ import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPowFinancial from '@/images/clients/pow-financial/logo-dark.svg'
+import logoMapleview from '@/images/clients/mapleview/logo-dark.svg'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -95,7 +95,7 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Pow Financial', logoPowFinancial],
+  ['Mapleview', logoMapleview],
   ['Family Fund', blastTradingApp],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
@@ -147,12 +147,16 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        title="Consistent results building software so clients get unstuck."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Clients come to us trying to solve real-world problems, but they're stuck. They don't have access to the data they need. They need someone to come in and fix a project that stalled. They need software that will scale to support their growth.
+        </p>
+        <p className='mt-5'>
+          Time and again, Cedar Vista listens to client's describe their problems, and then thinks outside the box to right-size a solution, often using enterprise-grade software, which will scale to their needs today, tomorrow, and years from now.
+        </p>
+        <p className='mt-5'>
+          Explore a selection of our client case studies to better understand how we could do the same for you.
         </p>
       </PageIntro>
 
@@ -160,10 +164,10 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'Mapleview Fintech', logo: logoMapleview }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        We approached <em>Cedar Vista</em> because I was impressed with their past work.
+        I hoped they could do the same for us. Incredibly, they did! And within all our constraints.
       </Testimonial>
 
       <Clients />

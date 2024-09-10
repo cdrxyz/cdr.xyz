@@ -8,27 +8,26 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import blastTradingApp from '@/images/clients/blast-trading-app/logo-light.svg'
+import blastTradingAppLight from '@/images/clients/blast-trading-app/logo-light.svg'
+import blastTradingAppDark from '@/images/clients/blast-trading-app/logo-dark.png'
+import logoKotlin from '@/images/clients/kotlin/logo-dark.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoMapleviewDark from '@/images/clients/mapleview/logo-dark.svg'
+import logoMapleviewDark from '@/images/clients/mapleview/logo-dark.png'
 import logoMapleviewLight from '@/images/clients/mapleview/logo-light.svg'
+import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+import logoPressbookDark from '@/images/clients/pressbook/logo-dark.png'
+import logoPressbookLight from '@/images/clients/pressbook/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Mapleview', logoMapleviewLight],
-  ['Blast Trading App', blastTradingApp],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Blast Trading App', blastTradingAppDark],
+  ['Mapleview', logoMapleviewDark],
+  ['Pressbook', logoPressbookDark],
+  ['Kotlin', logoKotlin],
 ]
 
 function Clients() {
@@ -37,7 +36,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Cedar Vista has partnered with many amazing teams and built with many industry leading tools:
+            Don't worry, you're in good company.
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -49,7 +48,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image className='max-w-48' src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -68,7 +67,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Teams need capable software solutions to unblock business growth. Cedar Vista delivers solutions which have enterprise-grade reliability, scalability, maintainbility, and usability so you can reach your potential.
+          Teams need capable software solutions to unblock business growth. Cedar Labs delivers solutions which have enterprise-grade reliability, scalability, maintainbility, and usability so you can reach your potential.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -173,12 +172,12 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Data Crawling. AI. Crypto. Search. Chat Bots.
+            Web Crawling. AI. Crypto. Search. Chat Bots.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            {"You don't have to choose between shipping fast and software which will last."}<br/>
-            {"Cedar Vista builds delightful digital solutions with the latest proven enterprise-grade software engineering practices so you can achieve your objectives."}
+            {"Ship fast or software that will last? Now, you don't have to choose."}
           </p>
+          
         </FadeIn>
       </Container>
 
@@ -190,7 +189,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mapleview', logo: logoMapleviewDark }}
       >
-        Cedar Vista made our dream come alive. They built an entire automated system and dashboard, and it all still works great 2 years later, for us and our users.
+        Cedar Labs made our dream come alive. They built an entire automated crawler and dashboard, and it all still works great 2 years later, for us and our users.
       </Testimonial>
 
       <Services />

@@ -1,5 +1,8 @@
 import Link from 'next/link'
 
+import {
+  useState
+} from 'react'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
@@ -11,6 +14,7 @@ const navigation = [
     links: [
       { title: 'Blast Trading App', href: '/work/blast-trading-app' },
       { title: 'Mapleview', href: '/work/mapleview' },
+      { title: 'Pressbook', href: '/work/pressbook' },
       {
         title: (
           <>
@@ -26,7 +30,7 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      // { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
@@ -109,7 +113,9 @@ function NewsletterForm() {
   )
 }
 
-export function Footer() {
+export function Footer() {  
+  let [logoHovered, setLogoHovered] = useState(false)
+
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
@@ -120,11 +126,16 @@ export function Footer() {
           </div>
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+          <Link 
+            href="/" 
+            aria-label="Home"
+            onMouseEnter={() => setLogoHovered(true)}
+            onMouseLeave={() => setLogoHovered(false)}
+          >
+            <Logo className="h-8" filled={logoHovered} />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © Cedar Labs {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

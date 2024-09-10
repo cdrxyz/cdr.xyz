@@ -9,13 +9,14 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import blastTradingApp from '@/images/clients/blast-trading-app/logo-dark.svg'
+import logoKotlin from '@/images/clients/kotlin/logo-dark.svg'
+import logoBlastTradingApp from '@/images/clients/blast-trading-app/logo-dark.png'
+import logoPressbook from '@/images/clients/pressbook/logo-dark.png'
 import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoMapleview from '@/images/clients/mapleview/logo-dark.svg'
+import logoMapleview from '@/images/clients/mapleview/logo-dark.png'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -95,13 +96,14 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
+  ['Blast Trading App', logoBlastTradingApp],
   ['Mapleview', logoMapleview],
-  ['Family Fund', blastTradingApp],
+  ['Pressbook', logoPressbook],
   ['Unseal', logoUnseal],
   ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],
   ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
+  ['Bright Path', logoKotlin],
   ['North Adventures', logoNorthAdventures],
 ]
 
@@ -153,7 +155,7 @@ export default async function Work() {
           Clients come to us trying to solve real-world problems, but they're stuck. They don't have access to the data they need. They need someone to come in and fix a project that stalled. They need software that will scale to support their growth.
         </p>
         <p className='mt-5'>
-          Time and again, Cedar Vista listens to client's describe their problems, and then thinks outside the box to right-size a solution, often using enterprise-grade software, which will scale to their needs today, tomorrow, and years from now.
+          Time and again, Cedar Labs listens to client's describe their problems, and then thinks outside the box to right-size a solution, often using enterprise-grade software, which will scale to their needs today, tomorrow, and years from now.
         </p>
         <p className='mt-5'>
           Explore a selection of our client case studies to better understand how we could do the same for you.
@@ -164,10 +166,11 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mapleview Fintech', logo: logoMapleview }}
+        client={{ name: 'Blast Trading App' }}
       >
-        We approached <em>Cedar Vista</em> because I was impressed with their past work.
-        I hoped they could do the same for us. Incredibly, they did! And within all our constraints.
+        Honestly, we were a bit desperate when we approached <em>Cedar Labs</em>.
+        They managed to turn the entire app around and fix our broken backend in time for our launch date.
+        We were very impressed, I couldn't recommend them more to anyone in a pinch.
       </Testimonial>
 
       <Clients />

@@ -4,8 +4,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Cedar Vista',
-    default: 'Cedar Vista - Enterprise caliber software engineering, for non-enterprise',
+    template: '%s - Cedar Labs',
+    default: 'Cedar Labs - Enterprise caliber software engineering, for non-enterprise',
   },
 }
 

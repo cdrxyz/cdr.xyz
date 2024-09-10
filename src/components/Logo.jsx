@@ -59,7 +59,7 @@ export function Logo({
     //   className={clsx(fillOnHover && 'group/logo', className)}
     //   {...props}
     // >
-    //   <h1>{"Cedar Vista"}</h1>
+    //   <h1>{"Cedar Labs"}</h1>
 
     //   <Logomark
     //     preserveAspectRatio="xMinYMid meet"

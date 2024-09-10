@@ -152,13 +152,13 @@ export default async function Work() {
         title="Consistent results building software so clients get unstuck."
       >
         <p>
-          Clients come to us trying to solve real-world problems, but they're stuck. They don't have access to the data they need. They need someone to come in and fix a project that stalled. They need software that will scale to support their growth.
+          {"Clients come to us trying to solve real-world problems, but they're stuck. They don't have access to the data they need. They need someone to come in and fix a project that stalled. They need software that will scale to support their growth."}
         </p>
         <p className='mt-5'>
-          Time and again, Cedar Labs listens to client's describe their problems, and then thinks outside the box to right-size a solution, often using enterprise-grade software, which will scale to their needs today, tomorrow, and years from now.
+          {"Time and again, Cedar Labs listens to client's describe their problems, and then thinks outside the box to right-size a solution, often using enterprise-grade software, which will scale to their needs today, tomorrow, and years from now."}
         </p>
         <p className='mt-5'>
-          Explore a selection of our client case studies to better understand how we could do the same for you.
+          {"Explore a selection of our client case studies to better understand how we could do the same for you."}
         </p>
       </PageIntro>
 
@@ -170,7 +170,7 @@ export default async function Work() {
       >
         Honestly, we were a bit desperate when we approached <em>Cedar Labs</em>.
         They managed to turn the entire app around and fix our broken backend in time for our launch date.
-        We were very impressed, I couldn't recommend them more to anyone in a pinch.
+        {"We were very impressed, I couldn't recommend them more to anyone in a pinch."}
       </Testimonial>
 
       <Clients />

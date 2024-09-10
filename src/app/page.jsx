@@ -187,9 +187,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mapleview', logo: logoMapleviewDark }}
+        client={{ name: 'Mapleview' }}
       >
-        Cedar Labs made our dream come alive. They built an entire automated crawler and dashboard, and it all still works great 2 years later, for us and our users.
+        Cedar Labs made our scope come alive. They built an entire automated crawler and dashboard, and it all still works great 2 years later, for us and our users.
       </Testimonial>
 
       <Services />

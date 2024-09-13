@@ -204,7 +204,7 @@ function Values() {
 export const metadata = {
   title: 'Our Process',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'We believe in velocity, honest conversations, and shipping quality solutions, fast.',
 }
 
 export default function Process() {
@@ -212,9 +212,11 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Our process is consistent project to project, and continues to lead to successful
+          outcomes for clients. We strive for velocity in our work, moving quickly. We aim for 
+          complete honesty within our team conversations and with clients on proposals, 
+          progress, and deliverables so we can avoid any blind spots. 
+          We achieve quality without compromising on shipping fast.
         </p>
       </PageIntro>
 

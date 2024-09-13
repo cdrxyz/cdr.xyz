@@ -28,26 +28,29 @@ function Culture() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        title="Doing good work is the reward."
         invert
       >
         <p>
-          We are a group of like-minded people who share the same core values.
+          We are a group of digital artisans who have deep respect for our craft.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="High standards" invert>
+            When given the choice between shipping fast or writing code that lasts, 
+            our team uniquely will push back with the correct response: why not both?
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Honesty" invert>
+            In hashing out project scope, progress updates, or evaluating launch succcess,
+            we prefer to treat clients with the same level of refreshing honesty that we
+            give to ourselves: we can always be better.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Respect" invert>
+            We respect your business, your resources, your vision enough to not string you
+            along to drain your budgets with over-priced, under-delivered, bloated tech debt.
+            We will be honest with what we can achieve within your budget, and work swiftly 
+            to deliver results.
           </GridListItem>
         </GridList>
       </Container>
@@ -188,23 +191,24 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="10x programmers, without 10x the cost">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Fortune 500 or well-funded startups usually snatch up all the 10x programemrs. Turns out, not all of them.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            We appreciate and acknowledge the unique ability of top tier talent to design and ship
+            better solutions, faster, and cheaper than their less talented peers. It is a fact of life.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            At Cedar Labs, we retain proven industry operators who are not usually available to smaller clients, 
+            a distinct competitive advantage compared to other contract dev shops who are forced to accept lesser 
+            talent or outsource to other labor markets.
+          </p>
+          <p>
+            We strip away the usual, frustrating bureaucracy of their day jobs, and let them run free.
+            Free to unlock a future for your organization by building delightful technical solutions to your most 
+            pressing problems.
           </p>
         </div>
       </PageIntro>

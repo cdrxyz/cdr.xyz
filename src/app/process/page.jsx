@@ -50,22 +50,18 @@ function Discover() {
         <p>
           We work closely with our clients to understand their{' '}
           <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          goals, having comprehensive initial conversations to ensure alignment.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          For web crawling projects or where otherwise necessary, our team will
+          conduct a feasability study to ensure that before anything is signed,
+          we have good confidence in our ability to execute on the proposed task.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          Our team of software engineers and technical project managers will work
+          together to develop a complete 
+          {' '}<strong className="font-semibold text-neutral-950">proposal</strong> 
+          {' '}for your review including scope, schedule, fees, and terms.
         </p>
       </div>
 
@@ -75,10 +71,8 @@ function Discover() {
       <TagList className="mt-4">
         <TagListItem>In-depth questionnaires</TagListItem>
         <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Comprehensive proposal</TagListItem>
       </TagList>
     </Section>
   )
@@ -89,32 +83,26 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Once the proposal is signed and deposit received, the build commences immediately.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          As milestones are reached, you will receive updates via email on progress
+          and how the project is progressing related to the initial proposed schedule.
+          If unforeseen circumstances lead to delays or warrant a conversation, you can trust
+          that we will be in touch to ensure alignment before we proceed further.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          We strive to deliver excellence in all domains of quality, scalability, reliability,
+          and speed of implementation to ensure your organization can achieve your objectives.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'Simon', role: 'CEO of Blast Trading App' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        Cedar Labs was never afraid of my questions and was refreshingly honest in sharing
+        the current state of the project and what still needed to be done.
       </Blockquote>
     </Section>
   )
@@ -125,31 +113,13 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          No project is complete until it has shipped. We will review the final product
+          with you to ensure it is complete to your satisfaction. 
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          We will also work closely with your team to handoff any documentation, systems,
+          or part of the solution that your team will be managing going forward. This ensures
+          an effortless path forward as we wrap up the project and time together.
         </p>
       </div>
 
@@ -158,16 +128,18 @@ function Deliver() {
       </h3>
       <List className="mt-8">
         <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+          Our projects always have sufficient test coverage, which ensures confidence that
+          the code we write works, and will continue to work, as expected.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="CI/CD">
+          Continuous Integration & Deployment allows us to maintain fast velocity in building
+          your solution with tests run on every code merge, and frequent production deploys
+          so the latest changes can always be available for QA and manual testing.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Economic Production Infrastructure">
+          Shipping to expensive cloud infrastructure providers lock you in to ongoing monthly bills
+          which could run you dry. We always aim to find the most economical production infrastructure
+          solution for clients to ensure that your software systems are net beneficial.
         </ListItem>
       </List>
     </Section>
@@ -252,7 +224,7 @@ export default function Process() {
         <Deliver />
       </div>
 
-      <Values />
+      {/* <Values /> */}
 
       <ContactSection />
     </>

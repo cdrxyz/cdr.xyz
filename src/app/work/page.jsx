@@ -6,6 +6,7 @@ import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
+import { Clients } from '@/app/page'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
@@ -95,46 +96,46 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
-const clients = [
-  ['Blast Trading App', logoBlastTradingApp],
-  ['Mapleview', logoMapleview],
-  ['Pressbook', logoPressbook],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoKotlin],
-  ['North Adventures', logoNorthAdventures],
-]
+// const clients = [
+//   ['Blast Trading App', logoBlastTradingApp],
+//   ['Mapleview', logoMapleview],
+//   ['Pressbook', logoPressbook],
+//   ['Unseal', logoUnseal],
+//   ['Mail Smirk', logoMailSmirk],
+//   ['Home Work', logoHomeWork],
+//   ['Green Life', logoGreenLife],
+//   ['Bright Path', logoKotlin],
+//   ['North Adventures', logoNorthAdventures],
+// ]
 
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
+// function Clients() {
+//   return (
+//     <Container className="mt-24 sm:mt-32 lg:mt-40">
+//       <FadeIn>
+//         <h2 className="font-display text-2xl font-semibold text-neutral-950">
+//           You’re in good company
+//         </h2>
+//       </FadeIn>
+//       <FadeInStagger className="mt-10" faster>
+//         <Border as={FadeIn} />
+//         <ul
+//           role="list"
+//           className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+//         >
+//           {clients.map(([client, logo]) => (
+//             <li key={client} className="group">
+//               <FadeIn className="overflow-hidden">
+//                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
+//                   <Image src={logo} alt={client} unoptimized />
+//                 </Border>
+//               </FadeIn>
+//             </li>
+//           ))}
+//         </ul>
+//       </FadeInStagger>
+//     </Container>
+//   )
+// }
 
 export const metadata = {
   title: 'Our Work',
@@ -164,6 +165,8 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
+      <Clients />
+
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Blast Trading App' }}
@@ -172,8 +175,6 @@ export default async function Work() {
         They managed to turn the entire app around and fix our broken backend in time for our launch date.
         {"We were very impressed, I couldn't recommend them more to anyone in a pinch."}
       </Testimonial>
-
-      <Clients />
 
       <ContactSection />
     </>

@@ -21,8 +21,8 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Ontario" invert={invert}>
-          Ontario, Canada
+        <Office name="East Coast" invert={invert}>
+          New York, New York
         </Office>
       </li>
     </ul>

@@ -115,7 +115,7 @@ function ContactDetails() {
         ))}
       </dl>
 
-      <Border className="mt-16 pt-16">
+      {/* <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Our offices
         </h2>
@@ -125,7 +125,7 @@ function ContactDetails() {
         </p>
 
         <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-      </Border>
+      </Border> */}
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">

@@ -30,7 +30,7 @@ const clients = [
   ['Kotlin', logoKotlin],
 ]
 
-function Clients() {
+export function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
@@ -48,7 +48,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image className='max-w-48' src={logo} alt={client} unoptimized />
+                  <Image className='max-w-36' src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -175,7 +175,7 @@ export default async function Home() {
             Web Crawling. AI. Crypto. Search. Chat Bots.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            {"Ship fast or software that will last? Now, you don't have to choose."}
+            {"Ship fast, or software that will last? Now, you don't have to choose."}
           </p>
           
         </FadeIn>

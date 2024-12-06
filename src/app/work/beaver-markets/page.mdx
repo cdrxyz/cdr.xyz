@@ -1,0 +1,75 @@
+import logo from '@/images/clients/beaver-markets/logomark-dark.png'
+import imageHero from './hero.png'
+import imageCeo from './ceo.png'
+
+export const caseStudy = {
+  client: 'Beaver Markets',
+  title: 'Serverless CMS for SSR HTML Widgets',
+  description:
+    'The existing backend was built on Java, showing its age, and becoming costly to maintain. Cedar Labs built a new serverless CMS was lower cost, nearly no maintenance, and had a flawless migration in record time.',
+  summary: [
+    'The existing backend was built on Java, showing its age, and becoming costly to maintain.',
+    'Cedar Labs built a new serverless CMS was lower cost, nearly no maintenance, and had a flawless migration in record time.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-06',  
+  endDate: '2024-08',
+  service: 'Fullstack, Backend, Frontend, DevOps',
+  testimonial: {
+    author: { name: 'Brian', role: 'CEO of Beaver Markets' },
+    content:
+      'We were struggling with the old system both with costly hosting and also maintenance hours. Cedar Labs was able to migrate us to a CMS without downtime and much lower cost.'
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Beaver Markets was using a custom built Java backend to handle aggregate uploaded reports and then generate HTML widgets for their clients to embed on their websites. 
+
+The backend was showing its age, and becoming costly to maintain, which is where Cedar Labs was brought in to help.
+
+Cedar Labs built a new serverless CMS that was lower cost, nearly no maintenance, and was able to do the full migration to the new system in only a few weeks.
+
+Over the 4 weeks of the project, Cedar Labs delivered
+
+- Migration of SSR functionality and data validation from legacy Java backend to Kotlin CLI
+- Migration of CI/CD from self-hosted Buildkite to Github Actions
+- Migration of authenticated form in legacy Java backend to git-based Netlify CMS with Github OAuth login
+- Zero-downtime migration of all existing HTML widgets to the new architecture
+- Uptime monitoring and alerting for the new CMS
+- Training of Beaver Markets staff on how to use the new CMS
+
+Beaver Markets was able to save on hosting costs, maintenance hours, and have a more reliable system thanks to Cedar Labs.
+
+*For privacy reasons, the CEO requested anonymizing both their name and the company name in this portfolio profile.*
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Netlify CMS)</TagListItem>
+  <TagListItem>Backend (Java)</TagListItem>
+  <TagListItem>Backend (Kotlin)</TagListItem>
+  <TagListItem>CI/CD (BuildKite)</TagListItem>
+  <TagListItem>CI/CD (Github Actions)</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Brian', role: 'CEO of Mapleview Fintech' }}
+  image={{ src: imageCeo }}
+>
+We were struggling with the old system both with costly hosting and also maintenance hours. Cedar Labs was able to migrate us to a CMS without downtime and much lower cost.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="500+" label="Documents Migrated" />
+  <StatListItem value="110s" label="Efficient CI/CD" />
+  <StatListItem value="0/m" label="Low Cost Deployment" />
+  <StatListItem value="248/m" label="Saved Cloud Costs" />
+  <StatListItem value="20 hours" label="Saved Monthly Maintenance" />
+</StatList>

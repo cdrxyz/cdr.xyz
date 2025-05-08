@@ -173,11 +173,14 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Web Crawling. AI. Crypto. Search. Chat Bots.
+            Web Crawling. AI. Crypto. Search. Chat Bots. 10x.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             {"Ship fast, or software that will last? Now, you don't have to choose."}
           </p>
+           <p className="mt-6 text-xl text-neutral-600">
+              {"Fortune 500 or well-funded startups usually snatch up all the 10x programmers. Turns out, not all of them."}
+            </p>
           
         </FadeIn>
       </Container>

@@ -1,0 +1,72 @@
+import logo from '@/images/clients/antique-auctions/logomark-dark.png'
+import imageHero from './hero.png'
+import imageCeo from './ceo.png'
+
+export const caseStudy = {
+  client: 'Antique Auctions',
+  title: 'Two decades of data saved before their vendor deleted it all.',
+  description:
+    'An elderly group of collectors was in a pinch, their longtime vendor was going out of business and was going to delete their historical data. Cedar Labs was able to crawl it all in time and preserve it.',
+  summary: [
+    'An elderly group of collectors was in a pinch, their longtime vendor was going out of business and was going to delete their historical data.',
+    'Cedar Labs was able to crawl it all in time and preserve it.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2024-08',
+  endDate: '2024-12',
+  service: 'Crawling',
+  testimonial: {
+    author: { name: 'Rupert', role: 'Founder, Antique Auctions' },
+    content:
+      "We had really started to worry, many members were asking questions. One had suggested trying to find a programmer on Fiver but I wasn't comfortable with that. Cedar Labs were very professional in discussing our problem and how it could be solved, and managed to get it all done in less time than expected.",
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Antique Auctions was one of the first public auction websites for their niche of collectibles. They had been running with the same vendor for their website for nearly two decades, but unfortunately the vendor was going out of business.
+
+The vendor had given notice that all data would be deleted at the end of the year, but the group of collectors managing the auction site didn't have any idea how they could download all the historical transaction data before it was deleted.
+
+One group member had suggested finding an offshore programmer on Fiver, but many members weren't comfortable with that.
+
+Instead, they were introduced to Cedar Labs and were impressed with how quickly they could identify the problem and quickly put together a working demo of how the crawling could be done.
+
+A few weeks later, a download link to the raw data and an aggregated Excel document were sent to the group, and they were able to breathe a sigh of relief.
+
+Over the course of 3 weeks, Cedar Labs delivered:
+
+- Wrote a crawler using Selenium which crawled the entire website and saved all auction data to S3 including images, web page screenshot, raw HTML, and parsed extracted metadata
+- Wrote an aggregator to iterate over all crawled data in S3 and collect it into a single Excel file
+- Provided a final download link to the group for the raw data and images and the aggregated Excel file
+
+_For privacy reasons, the CEO requested anonymizing both their name and the company name in this portfolio profile._
+
+## What we did
+
+<TagList>
+  <TagListItem>Website Crawling</TagListItem>
+  <TagListItem>Data Aggregation</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Rupert', role: 'Founder, Antique Auctions' }}
+  image={{ src: imageCeo }}
+>
+  We had really started to worry, many members were asking questions. One had
+  suggested trying to find a programmer on Fiver but I wasn't comfortable with
+  that. Cedar Labs were very professional in discussing our problem and how it
+  could be solved, and managed to get it all done in less time than expected.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="35k" label="Auction Listings Crawled" />
+  <StatListItem value="3 weeks" label="Finished in Tight Deadline" />
+  <StatListItem value="$0" label="Ongoing Hosting Costs" />
+</StatList>

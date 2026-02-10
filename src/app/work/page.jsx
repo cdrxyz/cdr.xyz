@@ -166,7 +166,7 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Clients />
+      {/* <Clients /> */}
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"

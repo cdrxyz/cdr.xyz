@@ -8,8 +8,6 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import blastTradingAppLight from '@/images/clients/blast-trading-app/logo-light.svg'
-import blastTradingAppDark from '@/images/clients/blast-trading-app/logo-dark.png'
 import logoKotlin from '@/images/clients/kotlin/logo-dark.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
@@ -24,7 +22,6 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Blast Trading App', blastTradingAppDark],
   ['Mapleview', logoMapleviewDark],
   ['Pressbook', logoPressbookDark],
   ['Kotlin', logoKotlin],

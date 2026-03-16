@@ -11,7 +11,6 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
 import logoKotlin from '@/images/clients/kotlin/logo-dark.svg'
-import logoBlastTradingApp from '@/images/clients/blast-trading-app/logo-dark.png'
 import logoPressbook from '@/images/clients/pressbook/logo-dark.png'
 import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
@@ -98,7 +97,6 @@ function CaseStudies({ caseStudies }) {
 }
 
 // const clients = [
-//   ['Blast Trading App', logoBlastTradingApp],
 //   ['Mapleview', logoMapleview],
 //   ['Pressbook', logoPressbook],
 //   ['Unseal', logoUnseal],
@@ -170,11 +168,12 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Blast Trading App' }}
+        client={{ name: 'Mapleview Fintech' }}
       >
-        Honestly, we were a bit desperate when we approached <em>Cedar Labs</em>.
-        They managed to turn the entire app around and fix our broken backend in time for our launch date.
-        {"We were very impressed, I couldn't recommend them more to anyone in a pinch."}
+        We had an ambitious goal to liberate Canadian corporate disclosures and
+        financial documents from the decrepit government portal. Cedar Labs made our
+        huge scope come to life. And all their software still works great, 2 years
+        later.
       </Testimonial>
 
       <ContactSection />

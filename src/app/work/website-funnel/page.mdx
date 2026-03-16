@@ -1,0 +1,53 @@
+import logo from '@/images/clients/mail-smirk/logomark-dark.svg'
+import imageHero from './hero.png'
+
+export const caseStudy = {
+  client: 'Website Funnel',
+  title: 'AI-powered lead generation app scoring website design quality across thousands of businesses.',
+  description:
+    'Built a fullstack SaaS application that uses AI vision models to score website design quality and generate qualified leads for web design agencies, with multi-model testing across OpenRouter.',
+  summary: [
+    'A marketing founder needed a tool to identify businesses with poorly designed websites and turn them into qualified leads for web design services.',
+    'Cedar Labs built a fullstack Next.js application integrating multiple AI foundation models via OpenRouter — testing and fine-tuning across Grok, Gemini, OpenAI, and Claude — to score website visual quality and automate the lead generation pipeline.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2025-08',
+  endDate: '2025-11',
+  service: 'Fullstack Development, AI Engineering',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Web design agencies and freelance developers spend countless hours prospecting for clients — manually browsing business directories, eyeballing website quality, and guessing which businesses might be ready for a redesign. The founder of a marketing automation company saw an opportunity to turn this into a data-driven pipeline.
+
+Cedar Labs was brought on to build the full application from scratch: a SaaS platform that takes a location and industry, discovers businesses via the Google Places API, captures screenshots of their websites, and uses AI vision models to score each site's design quality on a scale of 1 to 100. Low-scoring sites become qualified leads that users can filter, enrich, and export directly into outreach tools.
+
+The core technical challenge was the AI scoring pipeline. Website design quality is subjective, and no single model handled every edge case well. We integrated OpenRouter as a model routing layer and ran structured evaluations across four foundation model families — xAI's Grok, Google's Gemini, OpenAI's GPT-4 Vision, and Anthropic's Claude — comparing multimodal outputs for accuracy, consistency, and cost. Each model received the same set of website screenshots and was prompted to evaluate layout, typography, color usage, responsiveness signals, and overall visual polish. We iterated on prompt engineering and scoring calibration to converge on a reliable, reproducible scoring system that blended outputs from the best-performing models.
+
+The application was built on Next.js 14 with the App Router, using Supabase Postgres with Drizzle ORM for data persistence, Clerk for authentication, and Upstash Redis for search caching. Screenshots were stored in Supabase Storage, and the entire platform was deployed on Vercel with background job orchestration for the crawl-and-score pipeline. The frontend used Tailwind CSS and ShadCN UI components with Framer Motion animations for a polished user experience.
+
+From first commit to production launch, the project was delivered in under four months — including the model evaluation work, API integrations, payment processing via Whop, and a lead export pipeline connected to outreach tooling.
+
+## What we did
+
+<TagList>
+  <TagListItem>Next.js 14 Fullstack App</TagListItem>
+  <TagListItem>AI Vision Model Testing</TagListItem>
+  <TagListItem>OpenRouter Multi-Model Integration</TagListItem>
+  <TagListItem>Supabase & Drizzle ORM</TagListItem>
+  <TagListItem>Google Places API</TagListItem>
+  <TagListItem>Vercel Deployment</TagListItem>
+</TagList>
+
+<StatList>
+  <StatListItem value="4" label="AI Model Families Evaluated" />
+  <StatListItem value="4 months" label="Concept to Production" />
+  <StatListItem value="8+" label="API Integrations" />
+  <StatListItem value="1–100" label="AI Design Quality Score" />
+</StatList>

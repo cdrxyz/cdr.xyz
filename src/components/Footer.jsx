@@ -12,7 +12,6 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'Blast Trading App', href: '/work/blast-trading-app' },
       { title: 'Mapleview', href: '/work/mapleview' },
       { title: 'Pressbook', href: '/work/pressbook' },
       {

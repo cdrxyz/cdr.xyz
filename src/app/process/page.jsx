@@ -98,11 +98,13 @@ function Build() {
       </div>
 
       <Blockquote
-        author={{ name: 'Simon', role: 'CEO of Blast Trading App' }}
+        author={{ name: 'Kevin', role: 'CEO of Mapleview Fintech' }}
         className="mt-12"
       >
-        Cedar Labs was never afraid of my questions and was refreshingly honest in sharing
-        the current state of the project and what still needed to be done.
+        We had an ambitious goal to liberate Canadian corporate disclosures and
+        financial documents from the decrepit government portal. Cedar Labs made our
+        huge scope come to life. And all their software still works great, 2 years
+        later.
       </Blockquote>
     </Section>
   )

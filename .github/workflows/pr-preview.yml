@@ -40,6 +40,9 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /cdrxyz.github.io/pr-preview/${{ github.event.pull_request.number }}
 
+      - name: Remove CNAME from preview build
+        run: rm -f ./out/CNAME
+
       - name: Deploy to GitHub Pages (PR Preview)
         uses: peaceiris/actions-gh-pages@v4
         with:

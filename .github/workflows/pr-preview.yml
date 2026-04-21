@@ -38,7 +38,7 @@ jobs:
       - name: Build with Next.js
         run: npx next build
         env:
-          NEXT_PUBLIC_BASE_PATH: /cdrxyz.github.io/pr-preview/${{ github.event.pull_request.number }}
+          NEXT_PUBLIC_BASE_PATH: /pr-preview/${{ github.event.pull_request.number }}
 
       - name: Remove CNAME from preview build
         run: rm -f ./out/CNAME
@@ -60,7 +60,7 @@ jobs:
 
             | URL | Status |
             |-----|--------|
-            | [Preview](https://cdrxyz.github.io/cdrxyz.github.io/pr-preview/${{ github.event.pull_request.number }}/) | Ready |
+            | [Preview](https://cdr.xyz/pr-preview/${{ github.event.pull_request.number }}/) | Ready |
 
             Preview will update automatically when you push more commits.
           edit-mode: replace

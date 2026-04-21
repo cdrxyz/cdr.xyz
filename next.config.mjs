@@ -11,8 +11,11 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath,
   images: { unoptimized: true },
   output: "export",
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],

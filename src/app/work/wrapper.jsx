@@ -50,6 +50,10 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
               </Container>
             </div>
 
+            {!caseStudy.image && (
+              <div className="border-b border-neutral-200" />
+            )}
+
             {caseStudy.image && (
               <div className="border-y border-neutral-200 bg-neutral-100">
                 <div className="-my-px mx-auto max-w-[76rem] bg-neutral-200">

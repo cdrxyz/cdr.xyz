@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option A: Geometric Cedar — Light (black on transparent) -->
+  <g transform="translate(4, 4)">
+    <rect x="11" y="36" width="4" height="6" fill="#0a0a0a"/>
+    <path d="M13 4 L24 20 L20 20 L13 10 L6 20 L2 20 Z" fill="#0a0a0a" opacity="0.5"/>
+    <path d="M13 10 L22 24 L18 24 L13 16 L8 24 L4 24 Z" fill="#0a0a0a" opacity="0.75"/>
+    <path d="M13 16 L19 28 L16 28 L13 22 L10 28 L7 28 Z" fill="#0a0a0a"/>
+  </g>
+  <text x="44" y="34" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#0a0a0a" letter-spacing="-0.5">cdr</text>
+</svg>

@@ -59,14 +59,13 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          {/* If bring a proper logo instead of h1, uncomment so large logo hidden in favor of motion s on mobile */}
-          {/* <Logomark
+          <Logomark
             className="h-8 sm:hidden"
             invert={invert}
             filled={logoHovered}
-          /> */}
+          />
           <Logo
-            className="hidden h-8 sm:block"
+            className="h-8 sm:block"
             invert={invert}
             filled={logoHovered}
           />

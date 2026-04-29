@@ -1,13 +1,13 @@
 # Cedar Labs Logo Design Assets
 
-## Half-Cedar Tree (Option H)
+## Half-Cedar Tree
 
 All SVGs use Tailwind class-based colors (`stroke-neutral-950` / `stroke-white`, `fill-neutral-950` / `fill-white`) for automatic light/dark mode support with transparent backgrounds.
 
 | File | Description |
 |------|-------------|
-| `H-half-cedar-tight-dark.svg` | Dark variant — neutral-950 strokes/fill on transparent |
-| `H-half-cedar-tight-light.svg` | Light variant — white strokes/fill on transparent |
+| `half-cedar-dark.svg` | Dark variant — neutral-950 strokes/fill on transparent |
+| `half-cedar-light.svg` | Light variant — white strokes/fill on transparent |
 
 ## Design
 

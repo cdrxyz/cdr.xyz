@@ -103,7 +103,7 @@ export function Logo({
 
 /**
  * Wide logo (lowercase): half-cedar tree + "cedar labs"
- * viewBox: 280 × 48
+ * viewBox: 210 × 48
  */
 export function LogoWide({
   className,
@@ -114,7 +114,7 @@ export function LogoWide({
 }) {
   return (
     <svg
-      viewBox="0 0 280 48"
+      viewBox="0 0 210 48"
       aria-hidden="true"
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
@@ -150,7 +150,7 @@ export function LogoWide({
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* "cedar" text */}
+      {/* "cedar labs" text, single element for natural word spacing */}
       <text
         x="22" y="28"
         fontFamily="system-ui, -apple-system, sans-serif"
@@ -158,23 +158,14 @@ export function LogoWide({
         fontWeight="500"
         className={invert ? 'fill-white' : 'fill-neutral-950'}
         letterSpacing="-0.5"
-      >cedar</text>
-      {/* "labs" text, spaced after "cedar" */}
-      <text
-        x="102" y="28"
-        fontFamily="system-ui, -apple-system, sans-serif"
-        fontSize="22"
-        fontWeight="500"
-        className={invert ? 'fill-white' : 'fill-neutral-950'}
-        letterSpacing="-0.5"
-      >labs</text>
+      >cedar labs</text>
     </svg>
   )
 }
 
 /**
  * Wide logo (title case): half-cedar tree + "Cedar Labs"
- * viewBox: 300 × 48
+ * viewBox: 220 × 48
  */
 export function LogoWideTitle({
   className,
@@ -185,7 +176,7 @@ export function LogoWideTitle({
 }) {
   return (
     <svg
-      viewBox="0 0 300 48"
+      viewBox="0 0 220 48"
       aria-hidden="true"
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
@@ -221,7 +212,7 @@ export function LogoWideTitle({
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* "Cedar" text */}
+      {/* "Cedar Labs" text, single element for natural word spacing */}
       <text
         x="22" y="28"
         fontFamily="system-ui, -apple-system, sans-serif"
@@ -229,16 +220,7 @@ export function LogoWideTitle({
         fontWeight="500"
         className={invert ? 'fill-white' : 'fill-neutral-950'}
         letterSpacing="-0.5"
-      >Cedar</text>
-      {/* "Labs" text, spaced after "Cedar" */}
-      <text
-        x="108" y="28"
-        fontFamily="system-ui, -apple-system, sans-serif"
-        fontSize="22"
-        fontWeight="500"
-        className={invert ? 'fill-white' : 'fill-neutral-950'}
-        letterSpacing="-0.5"
-      >Labs</text>
+      >Cedar Labs</text>
     </svg>
   )
 }

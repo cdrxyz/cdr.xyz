@@ -4,6 +4,12 @@
 
 All SVGs use Tailwind class-based colors (`stroke-neutral-950` / `stroke-white`, `fill-neutral-950` / `fill-white`) for automatic light/dark mode support with transparent backgrounds.
 
+### Favicon (tree + "c")
+
+| File | Description |
+|------|-------------|
+| `favicon.svg` | Tree + "c" (32×32 viewBox) — used as browser tab icon |
+
 ### Short Logo (tree + "cdr")
 
 | File | Description |
@@ -31,17 +37,17 @@ Half-cedar tree (left branches only, solid trunk line, stroke-width 1.5) + text 
 
 ## Usage
 
-Implemented as a React component in `src/components/Logo.jsx`:
+Implemented as React components in `src/components/Logo.jsx`:
 
-- `Logomark` — Tree icon only (24×24 viewBox), used on mobile header
-- `Logo` — Short logo with "cdr" text (108×48 viewBox), used on sm breakpoint
-- `LogoWide` — Wide logo with "cedar labs" text (280×48 viewBox), used on md+ breakpoint
-- `LogoWideTitle` — Wide logo with "Cedar Labs" text (300×48 viewBox), available as alternative
+- `Logomark` — Tree icon only (24×24 viewBox)
+- `Logo` — Short logo with "cdr" text (108×48 viewBox), used in header (mobile + sm)
+- `LogoWide` — Wide logo with "cedar labs" text (280×48 viewBox), used in header (md+) and footer (all sizes)
+- `LogoWideTitle` — Wide logo with "Cedar Labs" text (300×48 viewBox), alternative
 
 All accept `invert` prop for dark backgrounds (switches to white strokes/fill).
 
 ### Responsive behavior
 
-- **Mobile (< sm)**: Logomark in header, Logo in footer
-- **sm–md**: Logo "cdr" in header, LogoWide in footer
-- **md+**: LogoWide "cedar labs" in header and footer
+- **Header**: Logo "cdr" on mobile/sm → LogoWide "cedar labs" on md+
+- **Footer**: LogoWide "cedar labs" at all screen sizes
+- **Favicon**: Tree + "c" SVG icon

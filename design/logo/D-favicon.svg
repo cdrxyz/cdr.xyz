@@ -1,7 +1,0 @@
-<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Option D: Favicon — Cedar mark on dark rounded rect -->
-  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
-  <g transform="translate(4, 2)">
-    <path d="M12 3 L1 16 L6 16 L2 22 L8 22 L6 27 L10 27 L10 30 L14 30 L14 27 L18 27 L16 22 L22 22 L18 16 L23 16 Z" fill="white"/>
-  </g>
-</svg>

@@ -1,7 +1,0 @@
-<svg viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Option D: Cedar Mark + Wordmark — Dark (white on transparent) -->
-  <g transform="translate(2, 3)">
-    <path d="M13 4 L2 22 L7 22 L3 30 L9 30 L7 36 L11 36 L11 42 L15 42 L15 36 L19 36 L17 30 L23 30 L19 22 L24 22 Z" fill="white"/>
-  </g>
-  <text x="44" y="34" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="400" fill="white" letter-spacing="2">cdr</text>
-</svg>

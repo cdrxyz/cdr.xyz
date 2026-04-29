@@ -5,7 +5,7 @@ import {
 } from 'react'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
+import { Logo, LogoWide } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
@@ -131,7 +131,8 @@ export function Footer() {
             onMouseEnter={() => setLogoHovered(true)}
             onMouseLeave={() => setLogoHovered(false)}
           >
-            <Logo className="h-8" filled={logoHovered} />
+            <Logo className="h-8 sm:hidden" filled={logoHovered} />
+            <LogoWide className="hidden h-8 sm:block" filled={logoHovered} />
           </Link>
           <p className="text-sm text-neutral-700">
             © Cedar Labs {new Date().getFullYear()}

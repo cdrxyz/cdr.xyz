@@ -17,7 +17,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo, Logomark } from '@/components/Logo'
+import { Logo, LogoWide, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 
@@ -65,7 +65,12 @@ function Header({
             filled={logoHovered}
           />
           <Logo
-            className="h-8 sm:block"
+            className="hidden h-8 sm:block md:hidden"
+            invert={invert}
+            filled={logoHovered}
+          />
+          <LogoWide
+            className="hidden h-8 md:block"
             invert={invert}
             filled={logoHovered}
           />

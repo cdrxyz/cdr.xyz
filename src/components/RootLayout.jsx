@@ -17,7 +17,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { LogoWide } from '@/components/Logo'
+import { Logo, LogoWide } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 
@@ -59,11 +59,19 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <LogoWide
-            className="h-10"
-            invert={invert}
-            filled={logoHovered}
-          />
+          {invert ? (
+            <LogoWide
+              className="h-10"
+              invert={invert}
+              filled={logoHovered}
+            />
+          ) : (
+            <Logo
+              className="h-10"
+              invert={invert}
+              filled={logoHovered}
+            />
+          )}
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>

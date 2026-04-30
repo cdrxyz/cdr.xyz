@@ -21,7 +21,7 @@ export default async function Blog() {
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="We couldn't stay quiet">
+      <PageIntro eyebrow="Blog" title="Sometimes, we can't stay quiet">
         <p>
           New projects, open source software releases, industry forward
           guidance, philosophy of remaining human in the advent of AI, and

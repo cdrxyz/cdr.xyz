@@ -34,6 +34,12 @@ const navigation = [
     ],
   },
   {
+    title: 'Open Source',
+    links: [
+      { title: 'BlastShield', href: 'https://cdrxyz.github.io/blastshield/' },
+    ],
+  },
+  {
     title: 'Connect',
     links: socialMediaProfiles,
   },
@@ -42,7 +48,7 @@ const navigation = [
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">

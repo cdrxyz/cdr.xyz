@@ -5,6 +5,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
+import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
@@ -20,6 +21,7 @@ import logoPressbookLight from '@/images/clients/pressbook/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
+import { loadArticles } from '@/lib/mdx'
 
 const clients = [
   ['Mapleview', logoMapleviewDark],
@@ -162,8 +164,20 @@ export const metadata = {
     'We build delightful software solutions with enterprise-grade techniques.',
 }
 
+function BlogSection({ articles }) {
+  return (
+    <PageLinks
+      className="mt-24 sm:mt-32 lg:mt-40"
+      title="From the Blog"
+      intro="Sometimes, we can't stay quiet. New projects, open source releases, and whatever else we feel like writing about."
+      pages={articles.slice(0, 2)}
+    />
+  )
+}
+
 export default async function Home() {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  let articles = await loadArticles()
 
   return (
     <>
@@ -195,6 +209,8 @@ export default async function Home() {
       </Testimonial>
 
       <Services />
+
+      <BlogSection articles={articles} />
 
       <ContactSection />
     </>

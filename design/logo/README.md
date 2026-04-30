@@ -9,6 +9,16 @@ All SVGs use Tailwind class-based colors (`stroke-neutral-950` / `stroke-white`,
 | File | Description |
 |------|-------------|
 | `favicon.svg` | Tree + "c" (32×32 viewBox) — used as browser tab icon |
+| `favicon-white-bg.svg` | Tree + "c" on white background — for contexts requiring opaque favicon |
+
+### Tree Mark (tree only, no text)
+
+| File | Description |
+|------|-------------|
+| `half-cedar-mark-dark.svg` | Dark variant — neutral-950 strokes on transparent (32×32 viewBox) |
+| `half-cedar-mark-light.svg` | Light variant — white strokes on transparent (32×32 viewBox) |
+
+Use for avatars, app icons, or alternative favicon designs where text is unnecessary.
 
 ### Short Logo (tree + "cdr")
 

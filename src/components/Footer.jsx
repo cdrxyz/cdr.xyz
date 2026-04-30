@@ -131,7 +131,7 @@ export function Footer() {
             onMouseEnter={() => setLogoHovered(true)}
             onMouseLeave={() => setLogoHovered(false)}
           >
-            <LogoWide className="h-8" filled={logoHovered} />
+            <LogoWide className="h-10" filled={logoHovered} />
           </Link>
           <p className="text-sm text-neutral-700">
             © Cedar Labs {new Date().getFullYear()}

@@ -21,10 +21,11 @@ export default async function Blog() {
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro eyebrow="Blog" title="Sometimes, we can't stay quiet">
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+          New projects, open source software releases, industry forward
+          guidance, philosophy of remaining human in the advent of AI, and
+          whatever else we feel like writing about.
         </p>
       </PageIntro>
 

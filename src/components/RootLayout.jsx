@@ -17,7 +17,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo, Logomark } from '@/components/Logo'
+import { Logo, LogoWide } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 
@@ -59,17 +59,19 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          {/* If bring a proper logo instead of h1, uncomment so large logo hidden in favor of motion s on mobile */}
-          {/* <Logomark
-            className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          /> */}
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+          {invert ? (
+            <LogoWide
+              className="h-10"
+              invert={invert}
+              filled={logoHovered}
+            />
+          ) : (
+            <Logo
+              className="h-10"
+              invert={invert}
+              filled={logoHovered}
+            />
+          )}
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>

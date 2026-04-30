@@ -5,7 +5,7 @@ import {
 } from 'react'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
+import { LogoWide } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
@@ -124,14 +124,14 @@ export function Footer() {
             {/* <NewsletterForm /> */}
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link 
             href="/" 
             aria-label="Home"
             onMouseEnter={() => setLogoHovered(true)}
             onMouseLeave={() => setLogoHovered(false)}
           >
-            <Logo className="h-8" filled={logoHovered} />
+            <LogoWide className="h-10" filled={logoHovered} />
           </Link>
           <p className="text-sm text-neutral-700">
             © Cedar Labs {new Date().getFullYear()}

@@ -17,6 +17,11 @@ const team = [
         role: 'Technical Project Manager & Ruby Specialist',
         image: { src: imageChelseaHagon },
       },
+    ],
+  },
+  {
+    title: 'Team',
+    people: [
       {
         name: 'Andrew Alexander',
         role: 'Advisor, Kotlin Platform & Applied Agentic Engineering',

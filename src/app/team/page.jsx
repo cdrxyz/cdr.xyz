@@ -5,7 +5,7 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
+import imageSuzieAlexander from '@/images/team/suzie-alexander.jpg'
 import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageAndrewAlexander from '@/images/team/andrew-alexander.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
@@ -17,7 +17,7 @@ const team = [
       {
         name: 'Suzie Alexander',
         role: 'Founder. Ruby & Technical Project Management.',
-        image: { src: imageChelseaHagon },
+        image: { src: imageSuzieAlexander },
       },
       {
         name: 'Andrew Alexander',

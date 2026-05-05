@@ -7,7 +7,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
 import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
+import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 
 const team = [
   {
@@ -31,7 +31,7 @@ const team = [
       {
         name: 'Luke Bristol',
         role: 'ML & AI Engineer',
-        image: { src: imageJeffreyWebb },
+        image: { src: imageBenjaminRussel },
       },
     ],
   },

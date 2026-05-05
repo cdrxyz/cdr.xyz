@@ -25,12 +25,12 @@ const team = [
     people: [
       {
         name: 'Andrew Alexander',
-        role: 'Kotlin Platform & Agentic Engineering',
+        role: 'Advisor, Kotlin Platform & Agentic Engineering',
         image: { src: imageDriesVincent },
       },
       {
         name: 'Luke Bristol',
-        role: 'ML & AI Engineer',
+        role: 'Technical Staff, Applied AI & Model Fine-Tuning',
         image: { src: imageBenjaminRussel },
       },
     ],

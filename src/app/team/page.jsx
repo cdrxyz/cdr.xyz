@@ -11,18 +11,13 @@ import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 
 const team = [
   {
-    title: 'Leadership',
+    title: 'Technical Staff',
     people: [
       {
         name: 'Suzie Alexander',
         role: 'Founder. Ruby & Technical Project Management.',
         image: { src: imageChelseaHagon },
       },
-    ],
-  },
-  {
-    title: 'Technical Staff',
-    people: [
       {
         name: 'Andrew Alexander',
         role: 'Advisor, Kotlin Platform & Agentic Engineering',

@@ -25,7 +25,7 @@ const team = [
       },
       {
         name: 'Luke Bristol',
-        role: 'Technical Staff, Applied AI & Model Fine-Tuning',
+        role: 'Applied AI & Model Fine-Tuning',
         image: { src: imageBenjaminRussel },
       },
     ],

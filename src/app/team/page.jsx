@@ -20,7 +20,7 @@ const team = [
     ],
   },
   {
-    title: 'Team',
+    title: 'Technical Staff',
     people: [
       {
         name: 'Andrew Alexander',

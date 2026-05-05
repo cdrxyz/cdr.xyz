@@ -7,6 +7,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
 import imageDriesVincent from '@/images/team/dries-vincent.jpg'
+import imageAndrewAlexander from '@/images/team/andrew-alexander.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 
 const team = [
@@ -21,7 +22,7 @@ const team = [
       {
         name: 'Andrew Alexander',
         role: 'Advisor, Kotlin Platform & Agentic Engineering',
-        image: { src: imageDriesVincent },
+        image: { src: imageAndrewAlexander },
       },
       {
         name: 'Luke Bristol',

@@ -14,7 +14,7 @@ const team = [
     people: [
       {
         name: 'Suzie Alexander',
-        role: 'Technical Project Manager & Ruby Specialist',
+        role: 'Founder. Ruby & Technical Project Management.',
         image: { src: imageChelseaHagon },
       },
     ],

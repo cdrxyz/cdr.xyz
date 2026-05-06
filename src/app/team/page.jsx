@@ -6,9 +6,7 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import imageSuzieAlexander from '@/images/team/suzie-alexander.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageAndrewAlexander from '@/images/team/andrew-alexander.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 import imageAvatarSilhouette from '@/images/team/avatar-silhouette.jpg'
 
 const team = [
@@ -28,7 +26,12 @@ const team = [
       {
         name: 'Luke Bristol',
         role: 'Applied AI & Model Fine-Tuning',
-        image: { src: imageBenjaminRussel },
+        image: { src: imageAvatarSilhouette },
+      },
+      {
+        name: 'Igor Kravitz',
+        role: 'Fullstack Javascript, Python, Go, and Rust',
+        image: { src: imageAvatarSilhouette },
       },
       {
         name: 'This could be you...',

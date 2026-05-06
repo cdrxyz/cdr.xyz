@@ -9,6 +9,7 @@ import imageSuzieAlexander from '@/images/team/suzie-alexander.jpg'
 import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageAndrewAlexander from '@/images/team/andrew-alexander.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
+import imageAvatarSilhouette from '@/images/team/avatar-silhouette.jpg'
 
 const team = [
   {
@@ -28,6 +29,11 @@ const team = [
         name: 'Luke Bristol',
         role: 'Applied AI & Model Fine-Tuning',
         image: { src: imageBenjaminRussel },
+      },
+      {
+        name: 'This could be you...',
+        role: 'Join our team of elite talent helping small clients.',
+        image: { src: imageAvatarSilhouette },
       },
     ],
   },

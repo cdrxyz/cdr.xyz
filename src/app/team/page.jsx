@@ -6,7 +6,7 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import imageSuzieAlexander from '@/images/team/suzie-alexander.jpg'
-import imageAndrewAlexander from '@/images/team/andrew-alexander.jpg'
+import imageAndrewAlexander from '@/images/team/andrew-alexander.png'
 import imageAvatarSilhouette from '@/images/team/avatar-silhouette.jpg'
 
 const team = [

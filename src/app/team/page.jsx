@@ -21,7 +21,7 @@ const team = [
       },
       {
         name: 'Andrew Alexander',
-        role: 'Advisor, Kotlin Platform & Agentic Engineering',
+        role: 'Advisor. Kotlin Platform & Agentic Engineering.',
         image: { src: imageAndrewAlexander },
       },
       {

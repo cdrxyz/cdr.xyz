@@ -12,7 +12,7 @@ import { StatList, StatListItem } from '@/components/StatList'
 import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
+import imageSuzieAlexander from '@/images/team/suzie-alexander.jpg'
 import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
 import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
@@ -85,7 +85,7 @@ const team = [
       {
         name: 'Chelsea Hagon',
         role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        image: { src: imageSuzieAlexander },
       },
       {
         name: 'Emma Dorsey',

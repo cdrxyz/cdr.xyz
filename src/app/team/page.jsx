@@ -22,9 +22,9 @@ const team = [
       },
       {
         name: 'Andrew Alexander',
-        title: 'Founder',
-        specialties: ['Kotlin', 'Platform Engineering', 'Agentic AI'],
-        bio: 'Andrew architects the systems that keep Cedar Labs clients running. A deep background in Kotlin platform engineering and a growing focus on agentic AI systems means he designs solutions that are not just robust today, but adaptable to whatever comes next.',
+        title: 'Founder & Member of Technical Staff',
+        specialties: ['Kotlin', 'Platform Engineering', 'Agentic AI', 'Open Source'],
+        bio: 'Andrew co-founded Cedar Labs after nearly eight years at Block, where he led Kotlin platform engineering for 3,000+ developers across Cash App, Square, and Afterpay. He architected Misk\'s native AI Model Context Protocol support, built server-side rendered admin dashboards that cut frontend delivery from three weeks to six hours, and migrated the company\'s largest 30 TB data set to the cloud. A certified open-source developer and Canada\'s Business Model Competition winner, he now focuses on bringing Fortune 500-grade engineering to the clients who need it most.',
         image: { src: imageAndrewAlexander },
       },
       {

@@ -24,7 +24,7 @@ const team = [
         name: 'Andrew Alexander',
         title: 'Founder & Member of Technical Staff',
         specialties: ['Kotlin', 'Platform Engineering', 'Agentic AI', 'Open Source'],
-        bio: 'Andrew co-founded Cedar Labs after nearly eight years at Block, where he was the top contributor to the company\'s open-source Kotlin cloud microservices framework — used by over 2,000 applications to power the backends for Cash App and Square. A certified open-source developer and Canada\'s Business Model Competition winner, he now focuses on bringing Fortune 500-grade engineering to the clients who need it most.',
+        bio: 'Andrew co-founded Cedar Labs after nearly eight years at Block, where he was the top contributor to the company\'s open-source Kotlin cloud microservices framework — used by over 2,000 applications to power the backends for Cash App and Square. A Linux Foundation certified open-source developer for enterprise and Canada\'s Business Model Competition winner, he now focuses on bringing Fortune 500-grade engineering to the clients who need it most.',
         image: { src: imageAndrewAlexander },
       },
       {

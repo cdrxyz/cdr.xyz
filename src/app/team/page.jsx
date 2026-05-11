@@ -17,7 +17,7 @@ const team = [
         name: 'Suzie Alexander',
         title: 'Founder',
         specialties: ['Ruby', 'Technical Project Management', 'Agile Delivery'],
-        bio: 'Suzie founded Cedar Labs on a simple premise: small teams deserve the same caliber of software that enterprises take for granted. With over a decade of experience shipping production Ruby systems and managing complex technical programs, she ensures every engagement stays on track and delivers real results.',
+        bio: 'Suzie founded Cedar Labs on a simple premise: small teams deserve the same caliber of software that enterprises take for granted. With over a decade of experience managing complex technical projects ranging from Ruby fullstack apps to 9-figure research facility new builds at universities, she ensures every engagement stays on track and delivers real results.',
         image: { src: imageSuzieAlexander },
       },
       {

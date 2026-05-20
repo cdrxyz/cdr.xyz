@@ -1,0 +1,53 @@
+import logo from '@/images/clients/home-work/logomark-dark.svg'
+
+export const caseStudy = {
+  client: 'Apex Financial',
+  title: 'Native Android and iOS apps for a US neobank — shipped in 6 weeks.',
+  description:
+    'A US neobank needed mobile apps to let business customers check balances, manage cards, and talk to their AI agent on the go. Cedar Labs built and shipped native Android and iOS apps in 6 weeks using modern platform tooling.',
+  summary: [
+    'A US neobank\'s most requested feature was a mobile app — customers wanted to check balances, manage cards, and get financial insights without opening a browser.',
+    'Cedar Labs built and shipped native Android and iOS apps in 6 weeks, covering real-time balances, transaction history, card management, and a conversational AI agent for business performance questions.',
+  ],
+  logo,
+  date: '2026-05',
+  endDate: '2026-06',
+  service: 'Mobile Development, Frontend, AI Integration',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Apex Financial is a US-based neobank serving small and mid-size businesses with business checking accounts, corporate cards, and credit lines. Since launch, their customers had accessed everything through a responsive web app — but month after month, the single most requested feature in user feedback was a native mobile experience.
+
+Business owners wanted to check account balances on the go, review recent transactions from their phone, freeze or unfreeze cards in seconds, and adjust credit limits without logging into a browser. They also wanted access to Apex Financial's custom AI agent — which could answer natural-language questions about cash flow, spending patterns, and business performance metrics — right from their pocket.
+
+Cedar Labs was engaged to design and build both Android and iOS applications from the ground up. The engagement focused on three core areas: a real-time financial dashboard giving customers instant access to balances and transactions; full card management including freeze/unfreeze, credit limit adjustments, and card issuance tracking; and an integrated conversational AI interface that connects to Apex Financial's existing agent backend.
+
+Over 6 weeks, a team of two senior mobile engineers worked in parallel — one on Android and one on iOS — sharing a common API contract and design system to ensure feature parity and visual consistency across platforms. The Android app was built with Jetpack Compose, Metro DI, SQLDelight, and Gradle's new version catalog, following current Android best practices throughout. The iOS app used SwiftUI with a clean modular architecture, leveraging Swift Concurrency for all async operations and Core Data for local persistence.
+
+The result was two production-ready native apps, submitted to their respective app stores within the 6-week window, with feature-complete parity across platforms and a shared design language that matches the neobank's existing brand.
+
+## What we did
+
+<TagList>
+  <TagListItem>Native Android (Jetpack Compose)</TagListItem>
+  <TagListItem>Native iOS (SwiftUI)</TagListItem>
+  <TagListItem>Real-Time Balances & Transactions</TagListItem>
+  <TagListItem>Card Management & Controls</TagListItem>
+  <TagListItem>AI Agent Integration</TagListItem>
+  <TagListItem>Shared Design System</TagListItem>
+</TagList>
+
+<StatList>
+  <StatListItem value="6 weeks" label="Engagement Duration" />
+  <StatListItem value="2 platforms" label="Android & iOS Shipped" />
+  <StatListItem value="#1 feature" label="Most Requested by Users" />
+  <StatListItem value="2 engineers" label="Team Size" />
+</StatList>
+
+_For privacy reasons, the client requested anonymizing the company name in this portfolio profile._
